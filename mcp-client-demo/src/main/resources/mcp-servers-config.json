@@ -4,7 +4,7 @@
       "command": "/usr/bin/java",
       "args": [
         "-jar",
-        "/Users/shazin/Documents/Tutorials/mcp-server-demo/target/mcp-server-demo-0.0.1-SNAPSHOT.jar"
+        "../mcp-server-demo/target/mcp-server-demo-0.0.1-SNAPSHOT.jar"
       ]
     }
   }
