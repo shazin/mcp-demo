@@ -1,0 +1,28 @@
+spring:
+  ai:
+    mcp:
+      client:
+        enabled: true
+        name: mcp-client-demo
+        version: 1.0.0
+        request-timeout: 30s
+        type: SYNC  # or ASYNC for reactive applications
+        stdio:
+          root-change-notification: false
+          connections:
+            server1:
+              command: /usr/bin/java
+              args:
+                - -jar
+                - /Users/shazin/Documents/Tutorials/mcp-server-demo/target/mcp-server-demo-0.0.1-SNAPSHOT.jar
+          #servers-configuration: classpath:/mcp-servers-config.json
+        #sse:
+          #connections:
+            #server1:
+              #url: http://localhost:8080
+
+    openai:
+      api-key: ${SPRING_OPEN_AI_KEY}
+
+server:
+  port: 8090

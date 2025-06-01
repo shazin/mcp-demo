@@ -1,0 +1,16 @@
+# Using spring-ai-starter-mcp-server
+spring:
+  ai:
+    mcp:
+      server:
+        name: stdio-mcp-server-demo
+        version: 1.0.0
+        type: SYNC
+
+  main:
+    banner-mode: off
+    web-application-type: none
+
+logging:
+  pattern:
+    console:
